@@ -1,0 +1,4 @@
+Invoking command in '/home/long/ros2_ws/src/build/final2': /usr/bin/cmake --build /home/long/ros2_ws/src/build/final2 -- -j8 -l8
+Invoked command in '/home/long/ros2_ws/src/build/final2' returned '0': /usr/bin/cmake --build /home/long/ros2_ws/src/build/final2 -- -j8 -l8
+Invoking command in '/home/long/ros2_ws/src/build/final2': /usr/bin/cmake --install /home/long/ros2_ws/src/build/final2
+Invoked command in '/home/long/ros2_ws/src/build/final2' returned '0': /usr/bin/cmake --install /home/long/ros2_ws/src/build/final2

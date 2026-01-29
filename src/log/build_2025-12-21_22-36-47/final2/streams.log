@@ -1,0 +1,35 @@
+[0.015s] Invoking command in '/home/long/ros2_ws/src/build/final2': /usr/bin/cmake --build /home/long/ros2_ws/src/build/final2 -- -j8 -l8
+[0.060s] Invoked command in '/home/long/ros2_ws/src/build/final2' returned '0': /usr/bin/cmake --build /home/long/ros2_ws/src/build/final2 -- -j8 -l8
+[0.075s] Invoking command in '/home/long/ros2_ws/src/build/final2': /usr/bin/cmake --install /home/long/ros2_ws/src/build/final2
+[0.084s] -- Install configuration: ""
+[0.084s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/launch
+[0.084s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/launch/display.launch
+[0.084s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/launch/scara_control.launch
+[0.084s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/launch/gazebo.launch
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/urdf
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/urdf/final2.urdf
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/urdf/final2.csv
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/meshes
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/meshes/Link1.STL
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/meshes/Link3.STL
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/meshes/base_link.STL
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/meshes/Link2.STL
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/config
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/config/joint_names_final2.yaml
+[0.085s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/config/scara_control.yaml
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/ament_index/resource_index/package_run_dependencies/final2
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/ament_index/resource_index/parent_prefix_path/final2
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/environment/ament_prefix_path.sh
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/environment/ament_prefix_path.dsv
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/environment/path.sh
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/environment/path.dsv
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/local_setup.bash
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/local_setup.sh
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/local_setup.zsh
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/local_setup.dsv
+[0.086s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/package.dsv
+[0.087s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/ament_index/resource_index/packages/final2
+[0.087s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/cmake/final2Config.cmake
+[0.087s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/cmake/final2Config-version.cmake
+[0.087s] -- Up-to-date: /home/long/ros2_ws/src/install/final2/share/final2/package.xml
+[0.088s] Invoked command in '/home/long/ros2_ws/src/build/final2' returned '0': /usr/bin/cmake --install /home/long/ros2_ws/src/build/final2

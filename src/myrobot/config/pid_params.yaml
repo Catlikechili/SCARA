@@ -1,0 +1,39 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Tăng lên 100Hz để điều khiển mượt hơn
+
+    scara_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+scara_controller:
+  ros__parameters:
+    joints:
+      - J1
+      - J2
+      - J3
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position # Đã xóa velocity ở đây để khớp với file XACRO của bạn
+    
+    # BẮT BUỘC để chạy động học thuần túy (Kinematic)
+    open_loop_control: true
+    allow_integration_in_goal_trajectories: true
+    
+    state_publish_rate: 10.0
+    action_monitor_rate: 10.0
+    allow_partial_joints_goal: true
+
+    # Constraints dùng để kiểm tra sai số vị trí, không phải PID
+    constraints:
+      stopped_velocity_tolerance: 0.5
+      J1: {trajectory: 0.01, goal: 0.01}
+      J2: {trajectory: 0.01, goal: 0.01}
+      J3: {trajectory: 0.01, goal: 0.01}
+    gains:
+      J1: {p: 50.0, i: 0.01, d: 10.0}
+      J2: {p: 50.0, i: 0.01, d: 10.0}
+      J3: {p: 50.0, i: 0.01, d: 5.0}

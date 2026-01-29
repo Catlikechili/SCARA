@@ -1,0 +1,50 @@
+from launch import LaunchDescription
+from launch.actions import ExecuteProcess
+from launch_ros.actions import Node
+from ament_index_python.packages import get_package_share_directory
+import os
+
+def generate_launch_description():
+
+    pkg_final2 = get_package_share_directory('final2')
+    urdf_file = os.path.join(pkg_final2, 'urdf', 'final2.urdf')
+
+    return LaunchDescription([
+
+        # 1️⃣ Launch Gazebo empty world
+        ExecuteProcess(
+            cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so'],
+            output='screen'
+        ),
+
+        # 2️⃣ Static TF (base_link -> base_footprint)
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            arguments=['0', '0', '0', '0', '0', '0',
+                       'base_link', 'base_footprint'],
+            output='screen'
+        ),
+
+        # 3️⃣ Spawn robot into Gazebo
+        Node(
+            package='gazebo_ros',
+            executable='spawn_entity.py',
+            arguments=[
+                '-entity', 'final2',
+                '-file', urdf_file
+            ],
+            output='screen'
+        ),
+
+        # 4️⃣ Fake calibration topic
+        ExecuteProcess(
+            cmd=[
+                'ros2', 'topic', 'pub',
+                '/calibrated',
+                'std_msgs/msg/Bool',
+                '{data: true}'
+            ],
+            output='screen'
+        )
+    ])
